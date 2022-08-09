@@ -19,6 +19,7 @@ steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
+    mavenPath: 'D:\dist\apache-maven-3.8.6\bin\mvn.cmd'
     goals: 'clean verify -X'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
